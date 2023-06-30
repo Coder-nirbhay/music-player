@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Site</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- <title>Bootstrap demo</title> -->
+  <style>
+    /* CSS styles for the music site */
+    .add-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="background-color: rgb(139, 139, 221) ;"> 
+  <!-- alert checkup -->
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Welcome!</strong> This Music site hosted by Nirbhay.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div id="music-player">
+    <!-- Existing music player code -->
+    <!-- <h1 style="text-decoration:underline;">Nirbhay gupta</h1> -->
+    
+    <h1 style="margin-left: 600px; ">Music </h1>
+    <img src="pngwing.com.png" alt="my photo" style="width: 300px; margin-left: 500px;">
+    <div id="music-player" style="margin-left: 500px;">
+      
+      <audio id="audio-player" controls>
+        <source id="audio-source" src="" type="audio/mp3">
+      </audio>
+      <ul id="playlist">
+        <li data-src="mainChaand.mp3" >Song 1</li>
+        <li data-src="Shayad.mp3" >Song 2</li>
+        <li data-src="Raataan.mp3">Song 3</li>
+        <li data-src="Dil.mp3">Song 4</li>
+        <li data-src="Fitoor.mp3">Song 5</li>
+        <li data-src="Khaab.mp3">Song 6</li>
+      </ul>
+    
+  </div>
+  
+  <button class="add-button" onclick="addSong()" style="margin-left: 500px;">Add Song</button>
+  <h2 style="margin-left: 200px;">Add more songs from the below list by simple click add song and than enter given url of song :-</h2>
+    <ul style="margin-left: 400px;">
+      <li>Kalimba.mp3
+       <li> Kehndi Hundi Si.mp3
+        <li>Khaab.mp3
+       <li> Khairiyat.mp3
+       <li> Lo Maan Liya - Arijit Singh - 320Kbps.mp3
+       <li> Maid with the Flaxen Hair.mp3
+       <li> 01 Chogada - Loveratri.mp3
+       <li> 01. Agar Tum Miljao - Female.mp3
+       <li> 01. Tu Jo Hans Hans Ke.mp3
+       <li> 02 Kaun Tujhe (MS Dhoni) Palak 190Kbps.mp3
+       <li> 02 Sawarne Lage - Mitron.mp3
+       <li> 04 Kamariya - Mitron.mp3
+       <li> 04. Janam Janam Jo Saath.mp3
+       <li> 07 Channa Mereya - Arijit Singh 190Kbps.mp3
+       <li> 10 Bulleya - Amit Mishra 320Kbps.mp3
+        <li>Aaj Se Teri - Padman (Arijit Singh) 190Kbps.mp3
+       <li> Bol Do Na Zara (Azhar) Armaan Malik 320Kbps.mp3
+       <li> Brown Munde - AP Dhillon.mp3
+       <li> Chup Nahi Chup Hai Ranjha.mp3
+       <li> Coca Cola - Luka Chuppi.mp3
+       <li> Duniyaa - Luka Chuppi.mp3
+       <li> Gal Karke Song Asees Kaur.mp3</li>
+    </ul>
+  <script src="script.js"></script>
+</body>
+</html>
